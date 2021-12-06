@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./materialize/css/materialize.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="navbarHeader">
+        <div class="nav">
+            <nav class="nav-extended">
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo px-1"> Calculator Online</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="#">Advanced</a></li>
+                    <li><a href="#">Basic</a></li>
+                    <li><a href="#">programming</a></li>
+                  </ul>
+                </div>
+          </nav>
+    
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="#!">Advanced</a></li>
+                <li><a href="#!">Basic</a></li>
+                <li><a href="#!">Programming</a></li>
+              </ul>
+        </div>    
+    </div>
+      
+<div class="container" id="test2">
+<div class="row justify-content-center">
+<div  class="col-lg-8 col-md-8 col-sm-10 col-12">
+    <div class="card mt-4 mb-4">
+        <div class="card-header ">
+            <form name="f" action="get">
+                <div class="input-field">
+                    <input placeholder="number" name="number1" id="ResultInput" type="text" class="validate">
+                </div>
+            </form>     
+        </div>
+        <div class="card-body bg-outline-secondary pt-4 pb-4 mt-4 mb-4">
+            <div class="btn-group w-100">
+                <button class="btn bg-danger m-1" onClick="Cos()">cos</button>
+                <button class="btn bg-danger m-1" onClick="Sin()">sin</button>
+                <button class="btn bg-danger m-1" onClick="Tg()">tg</button>
+                <button class="btn bg-danger m-1" onClick="Ctg()">ctg</button>
+            </div> 
+            <div class="btn-group w-100">
+                <button class="btn bg-danger m-1" onClick="Pi()">&prod;</button>
+                <button class="btn bg-danger m-1" onClick="Exp()">e</button>
+                <button class="btn bg-danger m-1" onClick="Ln()">ln</button>
+                <button class="btn bg-danger m-1" onClick="Log()">lg</button>
+            </div> 
+            <div class="btn-group w-100">
+                <button class="btn bg-danger m-1" onClick="square()">x<sup>2</sup></button>
+                <button class="btn bg-danger m-1" onClick="Root()"><span><i class="fas fa-square-root-alt"></i></span></button>
+                <button class="btn bg-danger m-1" onClick="Clear()">C</button>
+                <button class="btn bg-danger m-1 " onClick="Delete()"><span><i class="fas fa-undo"></i></span></button>
+            </div> 
+            <div class="btn-group w-100">
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">9</button>
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">8</button>
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">7</button>
+                <button class="btn bg-danger m-1" onClick="number(event)">/</button>
+            </div>   
+            <div class="btn-group w-100 ">
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">6</button>
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">5</button>
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">4</button>
+                <button class="btn bg-danger m-1" onClick="number(event)">*</button>
+            </div>   
+            <div class="btn-group w-100">
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">3</button>
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">2</button>
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">1</button>
+                <button class="btn bg-danger m-1" onClick="number(event)">-</button>
+            </div>    
+            <div class="btn-group w-100">
+                <button class="btn btn-outline-primary m-1" onClick="number(event)">0</button>
+                <button class="btn bg-danger m-1" onClick="number(event)">.</button>
+                <button class="btn bg-danger  m-1 resultAll" onClick="Result(event)">=</button>
+                <button class="btn bg-danger m-1" onClick="number(event)">+</button>
+            </div>   
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    
+<footer class="page-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Profile and Settings</h5>
+              <p>Math</p>
+              <p>Digital</p>
+              <p>Programmin</p>
+              <p>Logarifm</p>
+            </div>
+            <div class="col l4 m-6 s12">
+              <h5 class="white-text">Contact us</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-4" href="#!"> <i class="fab fa-telegram"></i><span class="pl-3">Telegram</span> </a></li>
+                <li><a class="grey-text text-lighten-4" href="#!"><i class="fab fa-facebook"></i><span class="pl-3">facebook</span> </a> </li>
+                <li><a class="grey-text text-lighten-4" href="#!"><i class="fab fa-github"></i><span class="pl-3">github</span> </a></li>
+                <li><a class="grey-text text-lighten-4" href="#!"><i class="fab fa-twitter"></i><span class="pl-3">twitter</span> </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          © 2021 Copyright Text
+          </div>
+        </div>
+</footer>
+
+    <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+
+    <script>
+         function Pi(){
+            let Pi=Math.PI
+            let str1=document.f.number1.value;
+            let str2=str1.concat(Pi)
+            document.f.number1.value=str2  
+        }
+        function Exp(){
+            let Exp=Math.E
+            let str1=document.f.number1.value;
+            let str2=str1.concat(Exp)
+            document.f.number1.value=str2 
+        }
+        function Ln(){
+            let Exp=Math.Ln
+            let str1=document.f.number1.value;
+            console.log(str1)
+            let str2=Math.log(parseFloat(str1))
+            console.log(str2)
+            document.f.number1.value=str2 
+        }
+        function Log(){
+            let str1=document.f.number1.value;
+            let str2=Math.log10(parseFloat(str1))
+            document.f.number1.value=str2 
+        }
+        function Sin(){
+            let str1=document.f.number1.value;
+            let str2=Math.sin(parseFloat(str1*Math.PI/180))
+            console.log(str1)
+            document.f.number1.value=str2 
+            console.log(str2)
+        }
+        function Cos(){
+            let str1=document.f.number1.value;
+            let str2=Math.cos(parseFloat(str1*Math.PI/180))
+            console.log(str1)
+            document.f.number1.value=str2 
+            console.log(str2)
+        }
+        function Tg(){
+            let str1=document.f.number1.value;
+            let str2=Math.tan(parseFloat(str1*Math.PI/180))
+            console.log(str1)
+            document.f.number1.value=str2 
+            console.log(str2)
+        }
+        function Ctg(){
+            let str1=document.f.number1.value;
+            let str2=1/Math.tan(parseFloat(str1*Math.PI/180))
+            console.log(str1)
+            document.f.number1.value=str2 
+            console.log(str2)
+        }
+
+        function square(){
+            let squareResult=document.f.number1.value;
+            let ResultSquare=Math.pow(parseFloat(squareResult),2)
+            document.f.number1.value=ResultSquare
+        }
+        function Root(){
+            let rootResult=document.f.number1.value;
+            let Result=Math.sqrt(parseFloat(rootResult))
+            document.f.number1.value=Result
+        }
+        function number(e){
+            console.log(document.f.number1.value)
+            let yigindi =document.f.number1.value;
+            if(document.f.number1.value==="infinity" || document.f.number1.value==="NaN"){
+                document.f.number1.value="";
+            }
+            else if(document.f.number1.value==0){
+                document.f.number1.value=e.target.innerText;  
+            }   
+            else{
+                yigindi+=e.target.innerText
+                document.f.number1.value=yigindi
+                console.log(e.target.innerText)
+            }
+           
+        }
+        function Result(){
+            document.f.number1.value=eval(document.f.number1.value);
+
+        }
+        function Clear(){
+            document.f.number1.value=""
+        }
+      
+        function Delete(){
+            if(document.f.number1.value===""){
+                alert("input already has cleared")
+            }
+            else{
+                let length=document.f.number1.value.length;
+                let str1=document.f.number1.value;
+                let str2=str1.substr(0,length-1)
+                document.f.number1.value=str2;
+            }
+            console.log("input",document.f.number1.value)
+        }
+    </script>
+</body>
+</html>
