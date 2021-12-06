@@ -24,7 +24,12 @@ footer a:hover i{
 #ResultInput{
   text-align: right;
 }
+#deleteAll{
+  background-color: red !important;
+  text-transform: uppercase;
+}
 #test2 .card-body .btn-group .btn{
+    text-transform: lowercase;
     width: 80px;
     color: white !important;
     border-radius: 4px;
